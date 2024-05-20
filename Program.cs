@@ -27,7 +27,7 @@ namespace Lab_0
 
         static double HighValidation(string prompt, double lowNumber)
         {
-            double number = lowNumber - 1; // Initialize number with lowNumber - 1
+            double number = lowNumber - 1; 
             do
             {
                 Console.Write(prompt);
@@ -100,7 +100,6 @@ namespace Lab_0
                 rangeList.Add(i);
             }
 
-            // Print the prime numbers
             Console.WriteLine("The prime numbers are: ");
             foreach (double number in rangeList)
             {
@@ -118,7 +117,7 @@ namespace Lab_0
                 }
             }
 
-            string filePath = "numbers.txt"; // replace with your file path
+            string filePath = "numbers.txt";
             SumNumbersFromFile(filePath);
 
             Console.WriteLine();
